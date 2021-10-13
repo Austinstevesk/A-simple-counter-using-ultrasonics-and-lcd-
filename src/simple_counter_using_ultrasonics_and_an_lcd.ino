@@ -19,6 +19,10 @@ void setup() {
   lcd.print("IoT Club");
   testservo.attach(9);
   pinMode(10, INPUT);
+  pinMode(pingPin, OUTPUT);
+  pinMode(pinPin2, OUTPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(echoPin2, INPUT);
   Serial.begin(9600);
   delay(2000);
   lcd.clear();
